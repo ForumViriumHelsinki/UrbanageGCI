@@ -1,4 +1,4 @@
-# UrbanageGCI - Source data & preparation
+# UrbanageGCI - Source data from Helsinki
 
 To facilitate piloting the Green Comfort Index in Helsinki, a number of open geospatial data sources provided by the city are utilized. These are available from an open WFS API. Below, the data sets are briefly described with example query URLs used to retrieve them.
 
