@@ -31,3 +31,8 @@ A following palette is used:
 3. Heat stress level 3
 4. Heat stress level 4
 5. Heat stress level 5
+
+-----
+
+Combined, the following collection is applied in calculating the green comfort index.
+![Demonstration of Leuven source data](images/Leuven.jpg)
