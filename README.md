@@ -3,6 +3,8 @@ Utilities for piloting the Green Comfort Index from [URBANAGE](https://www.urban
 
 The following aspects are covered in this repository:
 1. [Source data & preparation](DataPreparation.md)
+2. [Data format needed for GCI computation](DataFormat.md)
+3. [CURL request for launching the calculation](Calculation.md)
 
 Developed by Forum Virium Helsinki
 
