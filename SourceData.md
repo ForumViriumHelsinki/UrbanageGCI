@@ -46,14 +46,6 @@ The query may return a total of 33 items. [Load all as WGS84 GeoJSON](https://ka
 	
 The query may return a total of 634 items. [Load all as WGS84 GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Viherosat_piste&count=1000&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20LIKE%20%27%25Pöytä-penkki%20yhdistelmä%25%27)
 
-#### Drinking water fountains
-
-[10 first features as WGS84 GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Viherosat_piste&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20LIKE%20%27%25Vesipiste%25%27)
-	
-	https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Viherosat_piste&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20LIKE%20%27%25Vesipiste%25%27
-	
-The query may return a total of 526 items. [Load all as WGS84 GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Viherosat_piste&count=1000&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20LIKE%20%27%25Vesipiste%25%27)
-
 #### Public restrooms
 
 [10 first features as WGS84 GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Viherosat_piste&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20LIKE%20%27%25Yleisökäymälä%25%27)
@@ -61,6 +53,16 @@ The query may return a total of 526 items. [Load all as WGS84 GeoJSON](https://k
 	https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Viherosat_piste&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20LIKE%20%27%25Yleisökäymälä%25%27
 	
 The query may return a total of 52 items. [Load all as WGS84 GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Viherosat_piste&count=1000&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20LIKE%20%27%25Yleisökäymälä%25%27)
+
+## Drinking water fountains
+
+Positions of water posts in the Helsinki metropolitan area are maintained by Helsinki Region Environmental Services HSY, and available as [open data](https://www.hsy.fi/en/environmental-information/open-data/avoin-data---sivut/water-posts-in-the-helsinki-metropolitan-area/).
+
+[10 first features as WGS84 GeoJSON](https://kartta.hsy.fi/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=vesihuolto:VH_Vesipostit_HSY&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&count=10)
+
+	https://kartta.hsy.fi/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=vesihuolto:VH_Vesipostit_HSY&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326
+
+The query may return a total of 67 features. [Load all as WGS84 GeoJSON](https://kartta.hsy.fi/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=vesihuolto:VH_Vesipostit_HSY&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&count=1000)
 
 ## Trees
 
