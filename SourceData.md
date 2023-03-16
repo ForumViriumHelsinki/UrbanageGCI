@@ -84,7 +84,7 @@ The register is available as a set of GIS layers, that are assembled from the re
 
 ### Pedestrian areas
 
-Pedestrian and cycle areas are assembled to layer "YLRE_Katu_ja_viherosat_kevytliikenne_alue". Separated bicycle lanes can be excluded with the following query ([First 10 features](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_kevytliikenne_alue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20NOT%20LIKE%20%27%25Erotettu pyörätie%25%27)).
+Pedestrian and cycle areas are assembled to layer "YLRE_Katu_ja_viherosat_kevytliikenne_alue". Separated bicycle lanes can be excluded with the following query ([First 10 features](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_kevytliikenne_alue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20NOT%20LIKE%20%27%25Erotettu%20pyörätie%25%27)).
 
 	https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_kevytliikenne_alue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20NOT%20LIKE%20%27%25Erotettu pyörätie%25%27
 	
