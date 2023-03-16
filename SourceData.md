@@ -76,3 +76,32 @@ The data is available with a [Creative Commons Attribution 4.0](https://creative
 	
 The query may return a total of 53744 items. [Load all as WGS84 GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:Puurekisteri_piste&count=100000&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326)
 
+## Public green and pedestrian areas
+
+The [REGISTER OF PUBLIC AREAS IN THE CITY OF HELSINKI](https://hri.fi/data/en_GB/dataset/helsingin-kaupungin-yleisten-alueiden-rekisteri) contains 2D polygons depicting the public areas in the city of Helsinki. The data is available with a [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license.
+
+The register is available as a set of GIS layers, that are assembled from the registry items. 
+
+### Pedestrian areas
+
+Pedestrian and cycle areas are assembled to layer "YLRE_Katu_ja_viherosat_kevytliikenne_alue". Separated bicycle lanes can be excluded with the following query ([First 10 features](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_kevytliikenne_alue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20NOT%20LIKE%20%27%25Erotettu pyörätie%25%27)).
+
+	https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_kevytliikenne_alue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20NOT%20LIKE%20%27%25Erotettu pyörätie%25%27
+	
+The query may return a total of 54392 features. [Load everything as GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_kevytliikenne_alue&count=100000&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&CQL_FILTER=alatyyppi%20NOT%20LIKE%20%27%25Erotettu pyörätie%25%27)
+
+### Green areas
+
+Public green areas are assembled to layer "YLRE_Katu_ja_viherosat_eiliikenne_alue" ([First 10 features as GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_eiliikenne_alue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326))
+
+	https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_eiliikenne_alue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326
+
+The query may return a total of 151778 features.[Load everything as GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_eiliikenne_alue&count=1000000&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326)
+
+## Analysis area definition
+
+Several different area divisions are available for the City of Helsinki. The following query loads a single small area polygon from the downtown Helsinki:
+
+	https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:Piirijako_pienalue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&featureID=112650
+
+[Load as GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:Piirijako_pienalue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&featureID=112650)
