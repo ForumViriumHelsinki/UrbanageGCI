@@ -2,16 +2,19 @@
 
 To facilitate piloting the Green Comfort Index in Helsinki, a number of open geospatial data sources provided by the city are utilized. These are available from an open WFS API. Below, the data sets are briefly described with example query URLs used to retrieve them.
 
+By combining the registries mentioned below, a following collection features depicting the green elements of the city is formed, with the data covering the entire administrative area:
+![Helsinki green features](images/HelsinkiAssets.jpg)
+
+The data offers a fairly detailed view to the cityscape:
+![Helsinki green features, a close-up](images/HelsinkiAssets_closeup.jpg)
+
 ## Amenities
 
 For amenities such as city furniture, most of the data is maintained in the [REGISTER OF PUBLIC AREAS IN THE CITY OF HELSINKI](https://hri.fi/data/en_GB/dataset/helsingin-kaupungin-yleisten-alueiden-rekisteri) as 2D point features. 
 
 > The register of public areas (YLRE) is a system of the Helsinki Urban Environment Division that contains information about the city’s street and green areas. The dataset is maintained for the use of the division and does not, as a rule, cover the assets in public areas that are the responsibility of the City of Helsinki’s other organisational departments or institutions. The information in the register of public areas is used to order maintenance for street and park areas in Helsinki. The information in the register is used, for example, in reporting on the activities of the Street and Park Department and in asset management of public areas.
 
-The data is available with a [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. If all of the layers listed below are combined, a resulting collection of points is formed:
-
-![Demonstration of Helsinki amenities point features](images/HelsinkiAmenitiesPoints.jpg)
-
+The data is available with a [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license.
 ### Park benches
 
 #### Public, permanent park benches in Helsinki (maintained by the city)
@@ -97,11 +100,3 @@ Public green areas are assembled to layer "YLRE_Katu_ja_viherosat_eiliikenne_alu
 	https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_eiliikenne_alue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326
 
 The query may return a total of 151778 features.[Load everything as GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:YLRE_Katu_ja_viherosat_eiliikenne_alue&count=1000000&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326)
-
-## Analysis area definition
-
-Several different [area divisions](https://hri.fi/data/en_GB/dataset/helsingin-piirijako) are available for the City of Helsinki. The following query loads a single small area polygon from the downtown Helsinki:
-
-	https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:Piirijako_pienalue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&featureID=112650
-
-[Load as GeoJSON](https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=avoindata:Piirijako_pienalue&count=10&outputFormat=application/json&srsName=urn:ogc:def:crs:EPSG::4326&featureID=112650)
