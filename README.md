@@ -9,6 +9,7 @@ The following aspects are covered in this repository:
 5. [Geofence for analysis](CalculationScope.md)
 6. [Combined test data from Helsinki](TestData.md)
 7. [CURL request for launching the calculation](Calculation.md)
+8. [Jupyter Notebook for triggering computation](Trigger.ipynb)
 
 Developed by Forum Virium Helsinki
 
