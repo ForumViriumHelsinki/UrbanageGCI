@@ -11,4 +11,5 @@ Please note that the original license conditions apply!
 * [HelsinkiBenches.json](https://proto.fvh.io/urbanage/HelsinkiBenches.json)
 
 #### Testsite geofence
-* [HelsinkiPublicArea.json](https://proto.fvh.io/urbanage/HelsinkiPublicArea.json)
+* Small test site: [HelsinkiPublicArea.json](https://proto.fvh.io/urbanage/HelsinkiPublicArea.json)
+* Entire Helsinki: [HelsinkiPublicArea_2.json](https://proto.fvh.io/urbanage/HelsinkiPublicArea_2.json)
