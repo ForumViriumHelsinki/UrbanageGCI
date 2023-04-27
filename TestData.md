@@ -36,6 +36,45 @@ Entire Helsinki: [HelsinkiPublicArea_2.json](https://proto.fvh.io/urbanage/Helsi
 [Original data](https://hri.fi/data/en_GB/dataset/helsingin-kaupungin-yleisten-alueiden-rekisteri) from the City of Helsinki. The maintainer of the dataset is Helsingin kaupunkiympäristön toimiala.
 Licensed under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
 
+## [Helsinki Districts](HelsinkiDistrictFeaturesToGeoJSON.ipynb)
+
+Helsinki major district, district and city sub-district data is available
+from Helsinki Region Infoshare (HRI) as WFS API in GeoJSON format.
+The data is available in Finnish and Swedish and in EPSG:4326 (WGS84) projection.
+
+https://hri.fi/data/en_GB/dataset/helsingin-piirijako
+
+* [HelsinkiMajorDistrict.json](https://proto.fvh.io/urbanage/HelsinkiMajorDistrict.json)
+* [HelsinkiDistrict.json](https://proto.fvh.io/urbanage/HelsinkiDistrict.json)
+* [HelsinkiSubDistrict.json](https://proto.fvh.io/urbanage/HelsinkiSubDistrict.json)
+
+
+[Original data](https://hri.fi/data/en_GB/dataset/helsingin-kaupungin-yleisten-alueiden-rekisteri) from the City of Helsinki. The maintainer of the dataset is Helsingin kaupunkiympäristön toimiala.
+Licensed under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+## Cultural objects from Service Map
+
+[Service Map](https://palvelukartta.hel.fi/en/) is a service provided by the City of Helsinki. 
+The service provides information about the city's services, 
+service points and cultural sites. 
+The data is available in custom JSON format and it is converted
+to GeoJSON using [HelsinkiServiceMapDataToGeoJSON.ipynb](HelsinkiServiceMapDataToGeoJSON.ipynb)
+notebook.
+
+* [HelsinkiCulturalFacilities.json](https://proto.fvh.io/urbanage/HelsinkiCulturalFacilities.json)
+* [HelsinkiLibraries.json](https://proto.fvh.io/urbanage/HelsinkiLibraries.json)
+* [HelsinkiWorships.json](https://proto.fvh.io/urbanage/HelsinkiWorships.json)
+
+## Helsinki addresses
+
+Helsinki address data is available from Helsinki Region Infoshare (HRI) as WFS API in GeoJSON format.
+https://hri.fi/data/en_GB/dataset/helsingin-osoiteluettelo
+
+[HelsinkiAddressesToGeoJSON.ipynb](HelsinkiAddressesToGeoJSON.ipynb) notebook
+is used to simplify the data.
+
+* [HelsinkiAddressList.json](https://proto.fvh.io/urbanage/HelsinkiAddressList.json)
+
 ## Datasets for Helsinki - downtown area
 
 ### [HelsinkiTrees_limited.json](https://proto.fvh.io/urbanage/HelsinkiTrees_limited.json)
