@@ -1,4 +1,6 @@
 geojson
 jupyter
+pandas[excel]
 requests
-
+pyproj
+shapely
