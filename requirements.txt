@@ -1,4 +1,6 @@
+fmiopendata
 geojson
+httpx
 jupyter
 pandas[excel]
 requests
