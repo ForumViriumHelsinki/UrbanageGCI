@@ -1,10 +1,21 @@
 import copy
 import datetime
 import json
-from pprint import pprint
+import logging
+import sys
 
 import httpx
 from fmiopendata.wfs import download_stored_query
+
+# Set logging level to DEBUG to see debug messages
+logging.basicConfig(level=logging.INFO)
+
+API_URL = sys.argv[1]
+API_HEADERS = {
+    "Content-Type": "application/json",
+    "Fiware-Service": "helsinki",
+    "User-Agent": "UrbanAge fmi_aq2api/0.0.1",
+}
 
 # Source: https://ropengov.github.io/fmi2/articles/weather_observation_data.html
 aq_stations = """4	Helsinki Kallio 2	100662	Kolmannen osapuolen ilmanlaadun havaintoasema	60.18739	24.9506	4258	1999-01-01T00:00:00Z	now
@@ -64,14 +75,16 @@ def create_post_data(station_name: str, station_meta: dict, data: dict):
 
     for k in data.keys():
         p[k] = data[k]["value"]
+    print(p["address"]["streetAddress"])
     return p
 
 
 def post_data(p: dict):
     body = json.dumps(p, indent=2)
+    logging.debug(body)
     print(body)
-    exit()
-    httpx.post("http://localhost:8080/observations", data=body)
+    res = httpx.post(API_URL, json=p, headers=API_HEADERS)
+    return res
 
 
 def main():
@@ -94,7 +107,8 @@ def main():
     for k in aq.data.keys():
         data = extract_latest_measurements(k, aq_stations_dict, aq.data[k])
         p = create_post_data(k, aq_stations_dict, data[k])
-        post_data(p)
+        res = post_data(p)
+        logging.info(f"Sent {k}, status: {res.status_code} {res.text}")
 
 
 if __name__ == "__main__":
